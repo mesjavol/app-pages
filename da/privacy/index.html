@@ -11,22 +11,34 @@
 <nav><a href="../../">Subscout</a><a href="../../da/privacy/">Privatliv</a><a href="../../da/support/">Support</a><span class="spacer"></span><a href="../../privacy/" hreflang="en" lang="en">English</a><a href="../../sv/privacy/" hreflang="sv" lang="sv">Svenska</a><a href="../../de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="../../fr/privacy/" hreflang="fr" lang="fr">Français</a><a href="../../es/privacy/" hreflang="es" lang="es">Español</a><a href="../../nb/privacy/" hreflang="nb" lang="nb">Norsk</a></nav>
 <main>
 <h1>Privatlivspolitik</h1>
-<p><strong>Senest opdateret:</strong> 2026-10-01<br>
+<p><strong>Senest opdateret:</strong> 2026-11-23<br>
 <strong>App:</strong> Subscout til iPhone, iPad og Mac<br>
 <strong>Kontakt:</strong> <a href="mailto:wortmyre@gmail.com">wortmyre@gmail.com</a></p>
 <h2>Kort fortalt</h2>
-<p>Subscout indsamler ikke data om dig. Der er ingen konto, ingen reklamer, ingen analyse og ingen sporing, og appen indeholder ingen kode fra tredjeparter. Dine abonnementer er dine.</p>
+<p>Subscout finder dine abonnementer for dig. Hvis du forbinder en postkasse, læser appen dine kvitteringsmails <strong>på din enhed</strong> og foreslår abonnementer. Udvikleren har ingen server og kan ikke se dine mails eller dine abonnementer. Der er ingen konto, ingen reklamer, ingen analyse og ingen sporing, og appen indeholder ingen kode fra tredjeparter.</p>
+<h2>Hvad appen læser</h2>
+<ul>
+<li><strong>Dine mails, kun hvis du forbinder en postkasse</strong> (Gmail eller iCloud Mail). Appen logger ind med en <strong>appadgangskode</strong>, som du selv opretter. Den ser på afsender og emne i mails fra de seneste 13 måneder og åbner kun dem, der ligner kvitteringer, fornyelser, prøveperioder eller prisændringer. Senere tjek ser kun på nye mails.</li>
+<li><strong>Kun læsning.</strong> Appen ændrer, flytter, sletter eller sender aldrig mails, og den markerer ikke mails som læst.</li>
+<li><strong>Et skærmbillede, du vælger</strong>, hvis du bruger »Læs et skærmbillede« med et billede af siden Abonnementer på din iPhone. Teksten læses på din enhed. Billedet gemmes ikke.</li>
+<li>Kvitteringer læses <strong>på din enhed</strong>: efter faste regler og, på enheder der har det, af Apple Intelligence, der kører på enheden. Ingen mailtekst sendes til nogen AI-tjeneste.</li>
+</ul>
 <h2>Hvad appen gemmer, og hvor</h2>
 <ul>
-<li><strong>Dine abonnementer</strong> (navne, priser, datoer, noter og lignende oplysninger, du skriver ind) gemmes <strong>på din enhed</strong>.</li>
-<li>Hvis du er logget ind på iCloud, <strong>synkroniseres de samme data mellem dine egne enheder via din private iCloud (privat CloudKit-database)</strong>. De er beskyttet af din Apple-konto. Udvikleren har ikke adgang til dem og kan ikke læse dem.</li>
+<li><strong>Dine abonnementer</strong> og de <strong>forslag</strong>, appen har fundet (for eksempel navn, pris, dato), gemmes på din enhed.</li>
+<li><strong>Dine appadgangskoder</strong> gemmes i nøgleringen på din enhed. Hvis iCloud-nøglering er slået til, holder Apple dem synkroniseret mellem dine egne enheder, så du kun skal forbinde én gang.</li>
+<li>Hvis du er logget ind på iCloud, <strong>synkroniseres abonnementer og forslag (også dem, du har afvist) mellem dine egne enheder via din private iCloud (privat CloudKit-database)</strong>. De er beskyttet af din Apple-konto. Udvikleren har ikke adgang til dem og kan ikke læse dem.</li>
+<li>Hvert forslag husker også, <strong>hvilke mails det kom fra</strong>: din mailadresse og mailenes Message-ID (en teknisk mærkat, som hver mail har), så den samme mail aldrig læses to gange. De gemmes sammen med forslaget i din egen private iCloud-database.</li>
+<li>Appen gemmer <strong>ingen</strong> kopi af dine mails. Den gemmer kun de små oplysninger, den har hentet fra en kvittering.</li>
+<li>For at opdage et abonnement, hvor kvitteringerne kommer med en måneds mellemrum, gemmer appen en kort liste med <strong>kvitteringsoplysninger</strong> fra de seneste 13 måneder (tjenestens navn, beløb, dato og hvilken mail de kom fra). Listen bliver <strong>kun på den enhed</strong>: den synkroniseres ikke, og den indeholder aldrig mailtekst.</li>
 <li><strong>Indstillinger</strong> (for eksempel tidspunktet for påmindelser) gemmes kun på enheden.</li>
 </ul>
 <h2>Hvad der sendes over internettet</h2>
 <ul>
-<li><strong>Intet, som udgangspunkt.</strong> Appen selv opretter ingen netværksforbindelser.</li>
-<li>Hvis du slår <strong>valutaomregning</strong> til i Indstillinger, henter appen den offentlige fil med daglige valutakurser, som Den Europæiske Centralbank udgiver. Det er en almindelig webforespørgsel: ingen konto, ingen id'er, og intet om dig eller dine abonnementer sendes. Som ved alle webforespørgsler kan serveren se den IP-adresse, forespørgslen kommer fra. De hentede kurser bliver på din enhed.</li>
-<li><strong>iCloud-synkroniseringen</strong> udføres af styresystemet på din enhed på Apples vilkår, ikke af appen.</li>
+<li><strong>Til din mailudbyder.</strong> Hvis du forbinder en postkasse, taler appen direkte med mailserveren (Gmail: imap.gmail.com, iCloud Mail: imap.mail.me.com) over en krypteret forbindelse for at logge ind og læse mails. Det går fra din enhed til Google eller Apple på deres vilkår. Det går ikke gennem nogen server hos os.</li>
+<li><strong>Til iCloud.</strong> Synkroniseringen udføres af styresystemet på din enhed på Apples vilkår, ikke af appen.</li>
+<li><strong>Valutakurser.</strong> Hvis du slår <strong>valutaomregning</strong> til i Indstillinger, henter appen den offentlige fil med daglige valutakurser, som Den Europæiske Centralbank udgiver. Ingen konto, ingen id'er, og intet om dig eller dine abonnementer sendes. Som ved alle webforespørgsler kan serveren se den IP-adresse, forespørgslen kommer fra.</li>
+<li><strong>Intet andet.</strong> Uden en forbundet postkasse og med valutaomregning slået fra opretter appen ingen netværksforbindelser af sig selv.</li>
 </ul>
 <h2>Notifikationer</h2>
 <p>Påmindelser er <strong>lokale notifikationer</strong>, der oprettes på din enhed. De sættes først op, når du har tilladt notifikationer og slået påmindelser til. Intet indhold fra notifikationerne forlader din enhed.</p>
@@ -36,6 +48,8 @@
 <p>Ingen. Dine data deles ikke med nogen, sælges ikke og bruges ikke af andre.</p>
 <h2>Du bestemmer</h2>
 <ul>
+<li><strong>Intet tilføjes, uden at du trykker.</strong> Forslag er kun forslag, indtil du tilføjer dem.</li>
+<li><strong>Fjern</strong> en postkasse når som helst (Indstillinger, Postkasser, Fjern). Appen sletter så dens adgangskode fra nøgleringen; med iCloud-nøglering slået til forsvinder den <strong>på alle dine enheder</strong>. Kvitteringsoplysningerne fra den postkasse slettes også. Forslag, der allerede er fundet, bliver, indtil du afviser eller tilføjer dem. Du kan også slette appadgangskoden i din Google- eller Apple-konto.</li>
 <li><strong>Eksportér</strong> dine data når som helst (Indstillinger, Data: JSON eller CSV).</li>
 <li><strong>Slet</strong> dem når som helst (Indstillinger, Data: Slet alle abonnementer). Med iCloud-synkronisering slettes de også på dine andre enheder. Hvis du sletter appen, fjernes dataene fra den enhed.</li>
 <li>Slå <strong>valutaomregning</strong>, <strong>påmindelser</strong> eller <strong>iCloud</strong> fra, når du vil.</li>

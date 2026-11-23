@@ -11,22 +11,34 @@
 <nav><a href="../">Subscout</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a><span class="spacer"></span><a href="../sv/privacy/" hreflang="sv" lang="sv">Svenska</a><a href="../de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="../fr/privacy/" hreflang="fr" lang="fr">Français</a><a href="../es/privacy/" hreflang="es" lang="es">Español</a><a href="../nb/privacy/" hreflang="nb" lang="nb">Norsk</a><a href="../da/privacy/" hreflang="da" lang="da">Dansk</a></nav>
 <main>
 <h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> 2026-10-01<br>
+<p><strong>Last updated:</strong> 2026-11-23<br>
 <strong>App:</strong> Subscout for iPhone, iPad and Mac<br>
 <strong>Contact:</strong> <a href="mailto:wortmyre@gmail.com">wortmyre@gmail.com</a></p>
 <h2>The short version</h2>
-<p>Subscout does not collect your data. There are no accounts, no advertising, no analytics and no tracking, and the app contains no third-party code. Your subscriptions are yours.</p>
+<p>Subscout finds your subscriptions for you. If you connect a mailbox, the app reads your receipt mails <strong>on your device</strong> and suggests subscriptions. The developer has no server and cannot see your mail or your subscriptions. There are no accounts, no advertising, no analytics and no tracking, and the app contains no third-party code.</p>
+<h2>What the app reads</h2>
+<ul>
+<li><strong>Your mail, only if you connect a mailbox</strong> (Gmail or iCloud Mail). The app signs in with an <strong>app password</strong> that you create yourself. It looks at the sender and subject of mails from the last 13 months and opens only the ones that look like receipts, renewals, trials or price changes. Later checks look at new mail only.</li>
+<li><strong>Read-only.</strong> The app never changes, moves, deletes or sends mail, and it does not mark mail as read.</li>
+<li><strong>A screenshot you choose</strong>, if you use "Read a screenshot" on your iPhone's Subscriptions screen. The text is read on your device. The picture is not kept.</li>
+<li>Receipts are read <strong>on your device</strong>: by fixed rules, and, on devices that have it, by Apple Intelligence running on the device. No mail text is sent to any AI service.</li>
+</ul>
 <h2>What the app stores, and where</h2>
 <ul>
-<li><strong>Your subscriptions</strong> (names, prices, dates, notes, and similar details you type in) are stored <strong>on your device</strong>.</li>
-<li>If you are signed in to iCloud, the same data is <strong>synced between your own devices through your private iCloud (CloudKit private database)</strong>. It is protected by your Apple Account. The developer has no access to it and cannot read it.</li>
+<li><strong>Your subscriptions</strong> and the <strong>suggestions</strong> the app found (for example name, price, date) are stored on your device.</li>
+<li><strong>Your app passwords</strong> are stored in the Keychain on your device. If iCloud Keychain is on, Apple keeps them in sync between your own devices, so you connect only once.</li>
+<li>If you are signed in to iCloud, subscriptions and suggestions (including the ones you dismissed) are <strong>synced between your own devices through your private iCloud (CloudKit private database)</strong>. It is protected by your Apple Account. The developer has no access to it and cannot read it.</li>
+<li>Each suggestion also keeps <strong>which mails it came from</strong>: your mail address and the mails' Message-IDs (a technical label every mail has), so the same mail is never read twice. These are stored with the suggestion, in your own private iCloud database.</li>
+<li>The app does <strong>not</strong> keep a copy of your mail. It keeps only the small facts it took from a receipt.</li>
+<li>To spot a subscription whose receipts come a month apart, the app keeps a short list of <strong>receipt facts</strong> from the last 13 months (service name, amount, date and which mail it came from). This list stays <strong>on that device only</strong>: it is not synced, and it never holds mail text.</li>
 <li><strong>Settings</strong> (for example reminder times) are stored on the device only.</li>
 </ul>
 <h2>What is sent over the internet</h2>
 <ul>
-<li><strong>Nothing, by default.</strong> The app itself makes no network connections.</li>
-<li>If you turn on <strong>currency conversion</strong> in Settings, the app downloads the public daily exchange-rate file published by the European Central Bank. This is an ordinary web request: no account, no identifiers, and nothing about you or your subscriptions is sent. Like any web request, the server can see the IP address the request comes from. The downloaded rates are kept on your device.</li>
-<li><strong>iCloud sync</strong> is performed by your device's operating system, under Apple's terms, not by the app.</li>
+<li><strong>To your mail provider.</strong> If you connect a mailbox, the app talks directly to the mail server (Gmail: imap.gmail.com, iCloud Mail: imap.mail.me.com) over an encrypted connection, to sign in and read mail. This goes from your device to Google or Apple, under their terms. It does not pass through any server of ours.</li>
+<li><strong>To iCloud.</strong> Sync is performed by your device's operating system, under Apple's terms, not by the app.</li>
+<li><strong>Exchange rates.</strong> If you turn on <strong>currency conversion</strong> in Settings, the app downloads the public daily exchange-rate file published by the European Central Bank. No account, no identifiers, and nothing about you or your subscriptions is sent. Like any web request, the server can see the IP address the request comes from.</li>
+<li><strong>Nothing else.</strong> Without a connected mailbox and with currency conversion off, the app makes no network connections of its own.</li>
 </ul>
 <h2>Notifications</h2>
 <p>Reminders are <strong>local notifications</strong> created on your device. They are only set up after you allow notifications and turn reminders on. No notification content leaves your device.</p>
@@ -36,6 +48,8 @@
 <p>None. Your data is not shared with, sold to, or used by anyone else.</p>
 <h2>Your control</h2>
 <ul>
+<li><strong>Nothing is added without your tap.</strong> Suggestions are only suggestions until you add them.</li>
+<li><strong>Remove</strong> a mailbox any time (Settings, Mailboxes, Remove). The app then deletes its password from the Keychain; with iCloud Keychain on, that removes it <strong>on all your devices</strong>. The receipt facts kept from that mailbox are deleted too. Suggestions already found stay until you dismiss or add them. You can also delete the app password in your Google or Apple account.</li>
 <li><strong>Export</strong> your data any time (Settings, Data: JSON or CSV).</li>
 <li><strong>Delete</strong> it any time (Settings, Data: Delete All Subscriptions). With iCloud sync on, deletion syncs to your other devices. Deleting the app removes the data from that device.</li>
 <li>Turn <strong>currency conversion</strong>, <strong>reminders</strong> or <strong>iCloud</strong> off whenever you like.</li>
